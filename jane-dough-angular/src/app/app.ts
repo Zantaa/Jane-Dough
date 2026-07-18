@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { afterNextRender, ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 interface FaqItem {
@@ -18,6 +18,18 @@ export class App {
   protected readonly menuOpen = signal(false);
   protected readonly openFaq = signal<number | null>(0);
   protected readonly signedUp = signal(false);
+
+  constructor() {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    if (location.hash) {
+      history.replaceState(null, '', `${location.pathname}${location.search}`);
+    }
+
+    afterNextRender(() => window.scrollTo(0, 0));
+  }
 
   protected readonly signupForm = new FormGroup({
     email: new FormControl('', {
