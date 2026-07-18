@@ -14,9 +14,14 @@
       <a href="#faq">FAQ</a>
     </nav>
 
-    <a class="header-social" [href]="instagramUrl" target="_blank" rel="noreferrer">
-      Instagram <span aria-hidden="true">↗</span>
-    </a>
+    <div class="header-socials" aria-label="Social media">
+      <a class="header-social" [href]="instagramUrl" target="_blank" rel="noreferrer">
+        Instagram <span aria-hidden="true">↗</span>
+      </a>
+      <a class="header-social" [href]="tiktokUrl" target="_blank" rel="noreferrer">
+        TikTok <span aria-hidden="true">↗</span>
+      </a>
+    </div>
 
     <button
       class="menu-button"
@@ -36,6 +41,9 @@
         <a href="#faq" (click)="closeMenu()">FAQ</a>
         <a [href]="instagramUrl" target="_blank" rel="noreferrer">
           Instagram <span aria-hidden="true">↗</span>
+        </a>
+        <a [href]="tiktokUrl" target="_blank" rel="noreferrer">
+          TikTok <span aria-hidden="true">↗</span>
         </a>
       </nav>
     }
@@ -229,9 +237,14 @@
         <a href="#dough">The Dough</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="footer-social" [href]="instagramUrl" target="_blank" rel="noreferrer">
-        Instagram <span aria-hidden="true">↗</span>
-      </a>
+      <div class="footer-socials" aria-label="Social media">
+        <a class="footer-social" [href]="instagramUrl" target="_blank" rel="noreferrer">
+          Instagram <span aria-hidden="true">↗</span>
+        </a>
+        <a class="footer-social" [href]="tiktokUrl" target="_blank" rel="noreferrer">
+          TikTok <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Jane Dough Foods</span>

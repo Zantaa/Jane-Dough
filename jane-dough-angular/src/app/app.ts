@@ -15,6 +15,7 @@ interface FaqItem {
 })
 export class App {
   protected readonly instagramUrl = 'https://www.instagram.com/janedoughfoods/';
+  protected readonly tiktokUrl = 'https://www.tiktok.com/@janedoughfoods';
   protected readonly menuOpen = signal(false);
   protected readonly openFaq = signal<number | null>(0);
   protected readonly signedUp = signal(false);
@@ -47,7 +48,7 @@ export class App {
     {
       question: 'When will the first batch be available?',
       answer:
-        'Soon! Join the first-batch list and follow Jane Dough on Instagram to be the first to hear about launch timing, early tastings, and where to buy.',
+        'Soon! Join the first-batch list and follow Jane Dough on Instagram or TikTok to be the first to hear about launch timing, early tastings, and where to buy.',
     },
     {
       question: 'Will you share ingredients and allergen information?',
