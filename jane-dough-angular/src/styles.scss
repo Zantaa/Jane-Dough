@@ -211,7 +211,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   position: relative;
   min-height: 660px;
   background-color: var(--tomato);
-  background-image: url("/Jane-Dough/hero-dumplings.png");
+  background-image: url("/Jane-Dough/hero-dumplings.webp");
   background-size: cover;
   background-position: center;
 }
@@ -282,7 +282,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   min-height: 630px;
   border: 2px solid var(--cocoa);
   border-radius: 46% 46% 28px 28px;
-  background: var(--butter) url("/Jane-Dough/story-folding.png") center/cover no-repeat;
+  background: var(--butter) url("/Jane-Dough/story-folding.webp") center/cover no-repeat;
   box-shadow: -14px 16px 0 var(--tomato);
 }
 .story-note {
@@ -358,7 +358,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .serve { display: grid; grid-template-columns: 1fr 1fr; padding: 0; background: var(--cream); }
 .serve-copy { padding: clamp(80px, 10vw, 150px) clamp(35px, 7vw, 110px); align-self: center; }
 .serve-copy .section-kicker { margin-bottom: 70px; }
-.serve-image { min-height: 790px; position: relative; background: var(--butter) url("/Jane-Dough/served-dumplings.png") center/cover no-repeat; }
+.serve-image { min-height: 790px; position: relative; background: var(--butter) url("/Jane-Dough/served-dumplings.webp") center/cover no-repeat; }
 .serve-badge {
   position: absolute;
   left: -70px;
