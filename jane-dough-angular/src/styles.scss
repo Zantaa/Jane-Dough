@@ -341,7 +341,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .step-card h3 { margin: 28px 0 12px; font-size: 43px; }
 .step-card p { margin: 0; font-size: 17px; line-height: 1.55; }
 .step-icon { height: 185px; position: relative; margin: 10px 0 0; }
-.wrapper-icon::before, .fold-icon::before, .plate-icon::before {
+.gather-icon::before, .make-icon::before, .plate-icon::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -354,7 +354,32 @@ button, a { -webkit-tap-highlight-color: transparent; }
   border-radius: 50%;
   box-shadow: 8px 9px 0 rgba(45, 27, 22, .35);
 }
-.fold-icon::before { height: 85px; border-radius: 90px 90px 20px 20px; }
+.gather-icon::before { width: 175px; height: 105px; border-radius: 50%; }
+.gather-icon::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 56px);
+  top: 20px;
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--cocoa);
+  border-radius: 50%;
+  background: var(--butter);
+  box-shadow: 53px -13px 0 -3px var(--tomato), 53px -13px 0 0 var(--cocoa), 106px 0 0 -3px var(--herb), 106px 0 0 0 var(--cocoa);
+}
+.make-icon::before { height: 92px; border-radius: 18px 18px 75px 75px; }
+.make-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 43px;
+  width: 118px;
+  height: 30px;
+  transform: translateX(-50%);
+  border: 3px solid var(--cocoa);
+  border-radius: 50%;
+  background: var(--tomato);
+}
 .plate-icon::before { width: 170px; height: 95px; border-radius: 50%; box-shadow: inset 0 0 0 12px rgba(233, 71, 47, .35), 8px 9px 0 rgba(45, 27, 22, .35); }
 
 .serve { display: grid; grid-template-columns: 1fr 1fr; padding: 0; background: var(--cream); }
